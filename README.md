@@ -96,3 +96,24 @@ iOS101 Capstone Project - README
 ## Wireframes
 
 <img src="ios101-wireframe.jpeg" width=600>
+
+## Features implemented
+- [x] Logo & Color Scheme
+- [x] Basic UI
+- [x] Basic Timer
+- [x] Screens & Tab Navigation
+
+## Features to be implemented
+- [ ] Searchable Exercises
+- [ ] Logging of sets, reps, and weight
+- [ ] Calendar View
+- [ ] Setting Weight Unit Toggle
+
+## Video Walkthrough
+<div>
+    <a href="https://www.loom.com/share/f0e04d41dfe34323bca03ed028fb089c">
+    </a>
+    <a href="https://www.loom.com/share/f0e04d41dfe34323bca03ed028fb089c">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/f0e04d41dfe34323bca03ed028fb089c-1e33071ea8461672-full-play.gif">
+    </a>
+  </div>
