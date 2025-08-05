@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EYw-wG-dGb">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="MyBarbell" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MyBarbellIcon" translatesAutoresizingMaskIntoConstraints="NO" id="hsf-zH-AgU">
+                                <rect key="frame" x="76.666666666666686" y="118" width="240" height="79"/>
+                            </imageView>
+                            <searchBar contentMode="redraw" placeholder="Search for an exercise..." translatesAutoresizingMaskIntoConstraints="NO" id="q3k-dn-14l">
+                                <rect key="frame" x="16" y="197" width="361" height="56"/>
+                                <color key="barTintColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="haE-GP-bxF"/>
+                                </connections>
+                            </searchBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hsf-zH-AgU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="3yX-Ai-BNb"/>
+                            <constraint firstItem="q3k-dn-14l" firstAttribute="top" secondItem="hsf-zH-AgU" secondAttribute="bottom" id="6jo-Cj-G7k"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hsf-zH-AgU" secondAttribute="trailing" constant="76.5" id="FFR-eM-tS6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hsf-zH-AgU" secondAttribute="bottom" constant="538" id="IKi-ht-p5x"/>
+                            <constraint firstItem="hsf-zH-AgU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76.5" id="Pm7-mq-oQt"/>
+                            <constraint firstItem="q3k-dn-14l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="a9m-K6-vwB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q3k-dn-14l" secondAttribute="trailing" constant="16" id="iuH-rn-bSW"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="PQC-l8-OWz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057.2519083969464" y="-27.464788732394368"/>
+        </scene>
+        <!--Create a Workout-->
+        <scene sceneID="jMm-gi-mmx">
+            <objects>
+                <viewController id="HJQ-fY-2Ft" customClass="WorkoutViewController" customModule="MyBarbell" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dxg-q7-T5P">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create a Workout" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KnY-y7-w0F">
+                                <rect key="frame" x="16" y="117.99999999999999" width="361" height="38.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="grE-YY-XR7">
+                                <rect key="frame" x="16" y="176.33333333333334" width="60" height="25.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter name of workout..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7dZ-3G-8n9">
+                                <rect key="frame" x="86" y="172" width="291" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rest Timer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1or-Ao-OAd">
+                                <rect key="frame" x="16" y="231" width="361" height="25.333333333333314"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WAK-Sx-DgL">
+                                <rect key="frame" x="110" y="600" width="173" height="35"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Edit Workout"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAx-if-m7N">
+                                <rect key="frame" x="110" y="655" width="173" height="35"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Complete Workout"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k9f-k1-tjt">
+                                <rect key="frame" x="65" y="321.33333333333331" width="263" height="118.33333333333331"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="99"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JRc-B2-eMO">
+                                <rect key="frame" x="135" y="484.66666666666669" width="123" height="35.000000000000057"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Start Timer"/>
+                                <connections>
+                                    <action selector="startTimer:" destination="HJQ-fY-2Ft" eventType="touchUpInside" id="ziN-E5-oFO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nSC-QW-QSA"/>
+                        <color key="backgroundColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="grE-YY-XR7" firstAttribute="leading" secondItem="nSC-QW-QSA" secondAttribute="leading" constant="16" id="1CP-Jy-2f3"/>
+                            <constraint firstItem="nSC-QW-QSA" firstAttribute="bottom" secondItem="7dZ-3G-8n9" secondAttribute="bottom" constant="529" id="45l-8M-vo5"/>
+                            <constraint firstItem="KnY-y7-w0F" firstAttribute="leading" secondItem="nSC-QW-QSA" secondAttribute="leading" constant="16" id="961-Ly-RnS"/>
+                            <constraint firstItem="WAK-Sx-DgL" firstAttribute="leading" secondItem="nSC-QW-QSA" secondAttribute="leading" constant="110" id="AyV-uM-1D1"/>
+                            <constraint firstItem="7dZ-3G-8n9" firstAttribute="leading" secondItem="grE-YY-XR7" secondAttribute="trailing" constant="10" id="Aye-8u-xVp"/>
+                            <constraint firstItem="7dZ-3G-8n9" firstAttribute="top" secondItem="KnY-y7-w0F" secondAttribute="bottom" constant="15.666666666666686" id="HHA-vN-8ck"/>
+                            <constraint firstItem="nSC-QW-QSA" firstAttribute="trailing" secondItem="JRc-B2-eMO" secondAttribute="trailing" constant="135" id="IpQ-7T-T3i"/>
+                            <constraint firstItem="k9f-k1-tjt" firstAttribute="top" secondItem="1or-Ao-OAd" secondAttribute="bottom" constant="65" id="JGN-lL-Etg"/>
+                            <constraint firstItem="nSC-QW-QSA" firstAttribute="trailing" secondItem="WAK-Sx-DgL" secondAttribute="trailing" constant="110" id="Kn8-Zn-rq7"/>
+                            <constraint firstItem="nSC-QW-QSA" firstAttribute="trailing" secondItem="1or-Ao-OAd" secondAttribute="trailing" constant="16" id="PNe-KT-ZZl"/>
+                            <constraint firstItem="nSC-QW-QSA" firstAttribute="bottom" secondItem="DAx-if-m7N" secondAttribute="bottom" constant="45" id="Q6R-rU-LU4"/>
+                            <constraint firstItem="nSC-QW-QSA" firstAttribute="trailing" secondItem="KnY-y7-w0F" secondAttribute="trailing" constant="16" id="QVD-0r-scc"/>
+                            <constraint firstItem="KnY-y7-w0F" firstAttribute="top" secondItem="nSC-QW-QSA" secondAttribute="top" id="QvV-lf-im0"/>
+                            <constraint firstItem="DAx-if-m7N" firstAttribute="top" secondItem="WAK-Sx-DgL" secondAttribute="bottom" constant="20" id="X8Q-ge-1qM"/>
+                            <constraint firstItem="JRc-B2-eMO" firstAttribute="leading" secondItem="nSC-QW-QSA" secondAttribute="leading" constant="135" id="XaJ-Xa-znV"/>
+                            <constraint firstItem="7dZ-3G-8n9" firstAttribute="centerY" secondItem="grE-YY-XR7" secondAttribute="centerY" id="bvL-8K-sut"/>
+                            <constraint firstItem="grE-YY-XR7" firstAttribute="top" secondItem="KnY-y7-w0F" secondAttribute="bottom" constant="20" id="cmA-bG-yxE"/>
+                            <constraint firstItem="nSC-QW-QSA" firstAttribute="trailing" secondItem="7dZ-3G-8n9" secondAttribute="trailing" constant="16" id="diP-Vp-z4u"/>
+                            <constraint firstItem="nSC-QW-QSA" firstAttribute="trailing" secondItem="k9f-k1-tjt" secondAttribute="trailing" constant="65" id="fGx-yd-OZU"/>
+                            <constraint firstItem="1or-Ao-OAd" firstAttribute="leading" secondItem="nSC-QW-QSA" secondAttribute="leading" constant="16" id="fLu-Ph-S4R"/>
+                            <constraint firstItem="1or-Ao-OAd" firstAttribute="top" secondItem="7dZ-3G-8n9" secondAttribute="bottom" constant="25" id="iIA-mU-gBL"/>
+                            <constraint firstItem="k9f-k1-tjt" firstAttribute="leading" secondItem="nSC-QW-QSA" secondAttribute="leading" constant="65" id="mBV-Ir-TlA"/>
+                            <constraint firstItem="DAx-if-m7N" firstAttribute="leading" secondItem="nSC-QW-QSA" secondAttribute="leading" constant="110" id="nlt-tw-rNG"/>
+                            <constraint firstItem="JRc-B2-eMO" firstAttribute="top" secondItem="k9f-k1-tjt" secondAttribute="bottom" constant="45" id="vKm-zg-f8s"/>
+                            <constraint firstItem="nSC-QW-QSA" firstAttribute="trailing" secondItem="DAx-if-m7N" secondAttribute="trailing" constant="110" id="xmT-Qb-zM8"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Create a Workout" image="dumbbell.fill" catalog="system" id="wN1-dB-Dnd"/>
+                    <connections>
+                        <outlet property="timerLabel" destination="k9f-k1-tjt" id="7es-GL-1Op"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GMk-dT-Gdv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1052.6717557251909" y="703.52112676056345"/>
+        </scene>
+        <!--Calendar-->
+        <scene sceneID="jwV-sa-JSw">
+            <objects>
+                <viewController id="dU6-16-2aU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GLr-XJ-CKI">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="W5G-Tj-dcg"/>
+                        <color key="backgroundColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Calendar" image="calendar" catalog="system" id="E7b-sj-8FG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fZ3-ea-UTv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1056" y="1459"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="RQo-yl-heF">
+            <objects>
+                <viewController id="MQC-X4-igf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9qS-TR-sYk">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="XHl-Zq-K4d"/>
+                        <color key="backgroundColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="gear" catalog="system" id="1oA-kA-EYY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gqj-R1-fRZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1056" y="2251"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="b6M-vl-2Bs">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="EYw-wG-dGb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KJO-QP-cBA">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="1Ig-tq-XYJ"/>
+                        <segue destination="HJQ-fY-2Ft" kind="relationship" relationship="viewControllers" id="g9P-wo-VhW"/>
+                        <segue destination="dU6-16-2aU" kind="relationship" relationship="viewControllers" id="7YU-4C-wKA"/>
+                        <segue destination="MQC-X4-igf" kind="relationship" relationship="viewControllers" id="zYF-O7-1tG"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3jx-Ps-Kit" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MyBarbellIcon" width="1024" height="1024"/>
+        <image name="calendar" catalog="system" width="128" height="107"/>
+        <image name="dumbbell.fill" catalog="system" width="128" height="72"/>
+        <image name="gear" catalog="system" width="128" height="122"/>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
+    </resources>
+</document>
