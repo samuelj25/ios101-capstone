@@ -116,4 +116,4 @@ iOS101 Capstone Project - README
     <a href="https://www.loom.com/share/f0e04d41dfe34323bca03ed028fb089c">
       <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/f0e04d41dfe34323bca03ed028fb089c-1e33071ea8461672-full-play.gif">
     </a>
-  </div>
+</div>

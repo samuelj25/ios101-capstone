@@ -10,6 +10,23 @@ import UIKit
 
 class WorkoutViewController: UIViewController {
     @IBOutlet weak var timerLabel: UILabel!
+    @IBOutlet weak var workoutNameTextField: UITextField!
+    
+    var exercises: [Exercise] = []
+    
+    @IBAction func tappedCompleteWorkout(_ sender: UIButton) {
+        let name = workoutNameTextField.text ?? "Untitled Workout"
+        let newWorkout = Workout(name: name,
+                                 date: Date(),
+                                 exercises: exercises)
+        newWorkout.save()
+        let alert = UIAlertController(title: "Workout Saved",
+                                           message: "You can view this workout in the Home Screen.",
+                                           preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Okay", style: .default))
+        present(alert, animated: true)
+    }
+    
     @IBAction func startTimer(_ sender: UIButton) {
         timer?.invalidate()
         timeRemaining = 15
@@ -23,7 +40,7 @@ class WorkoutViewController: UIViewController {
     }
     
     var timer: Timer?
-    // Hard coded for visual purposes
+    // Currently only works with 15 second timer
     var timeRemaining = 15
     
     override func viewDidLoad() {
