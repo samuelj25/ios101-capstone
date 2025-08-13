@@ -102,18 +102,24 @@ iOS101 Capstone Project - README
 - [x] Basic UI
 - [x] Basic Timer
 - [x] Screens & Tab Navigation
+- [x] Logging of sets, reps, and weight
+- [x] Calendar View
+- [x] Setting Weight Unit Toggle
 
 ## Features to be implemented
 - [ ] Searchable Exercises
-- [ ] Logging of sets, reps, and weight
-- [ ] Calendar View
-- [ ] Setting Weight Unit Toggle
+- [ ] API Integration
+- [ ] Better UI
+
 
 ## Video Walkthrough
 <div>
-    <a href="https://www.loom.com/share/f0e04d41dfe34323bca03ed028fb089c">
-    </a>
-    <a href="https://www.loom.com/share/f0e04d41dfe34323bca03ed028fb089c">
-      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/f0e04d41dfe34323bca03ed028fb089c-1e33071ea8461672-full-play.gif">
-    </a>
+  <a href="https://www.loom.com/share/3b0ac27703814ed787fa67cf69c81372">
+  </a>
+  <a href="https://www.loom.com/share/3b0ac27703814ed787fa67cf69c81372">
+    <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/3b0ac27703814ed787fa67cf69c81372-dbcbb45d7f7c79de-full-play.gif">
+  </a>
 </div>
+
+## NOTES
+Will make the exercise screen better with the ability to search for exercises instead of user input. Integration of API with exercises to be added as well.
